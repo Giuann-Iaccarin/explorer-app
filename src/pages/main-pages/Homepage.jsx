@@ -1,8 +1,8 @@
-import ProfileSummary from './homepage-components/ProfileSummary.jsx';
-import Statistics from './homepage-components/Statistics.jsx';
-import BadgeGrid from './homepage-components/BadgeGrid.jsx';
-import MissionList from './homepage-components/MissionList.jsx';
-import BlogPreview from './homepage-components/BlogPreview.jsx';
+import ProfileSummary from '../components/homepage-components/ProfileSummary.jsx';
+import Statistics from '../components/homepage-components/Statistics.jsx';
+import BadgeGrid from '../components/homepage-components/BadgeGrid.jsx';
+import MissionList from '../components/homepage-components/MissionList.jsx';
+import BlogPreview from '../components/homepage-components/BlogPreview.jsx';
 
 // Main App Component
 const ExplorerApp = ({ demoData }) => {

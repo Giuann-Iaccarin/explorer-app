@@ -25,7 +25,7 @@ const BadgeGrid = ({ badges }) => {
                             onMouseLeave={() => setHoveredBadge(null)}
                         >
                             {/* Badge medaglia */}
-                            <div className="relative w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-400 to-yellow-200 shadow-inner border-4 border-yellow-600">
+                            <div className="relative w-20 h-20 flex items-center justify-center rounded-full bg-linear-to-tr from-yellow-400 to-yellow-200 shadow-inner border-4 border-yellow-600">
                                 {/* Cerchio interno */}
                                 <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-md">
                                     <Icon className="w-8 h-8 text-yellow-600" />
