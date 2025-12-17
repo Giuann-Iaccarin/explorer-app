@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 const Footer = () => {
     const navItems = [
         { id: 'home', path: '/', icon: Home, label: 'Home' },
-        { id: 'missions', path: '/missioni', icon: Target, label: 'Missioni' },
+        { id: 'missions', path: '/missions', icon: Target, label: 'Missioni' },
         { id: 'blog', path: '/blog', icon: BookOpen, label: 'Blog' },
         { id: 'shop', path: '/shop', icon: ShoppingBag, label: 'Shop' },
         { id: 'profile', path: '/profilo', icon: User, label: 'Profilo' }

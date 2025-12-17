@@ -106,5 +106,14 @@ export const demoData = {
             image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
             date: "1 settimana fa"
         }
+    ],
+
+    redeemedProducts: [
+        { id: 1, name: "Smartphone XYZ", category: "Elettronica", redeemedDate: "15/11/2024" },
+        { id: 2, name: "Buono Amazon 50€", category: "Voucher", redeemedDate: "02/11/2024" },
+        { id: 3, name: "Cuffie Wireless", category: "Elettronica", redeemedDate: "20/10/2024" },
+        { id: 4, name: "Gift Card Netflix", category: "Intrattenimento", redeemedDate: "05/10/2024" },
+        { id: 5, name: "Zaino Premium", category: "Accessori", redeemedDate: "18/09/2024" },
+        { id: 6, name: "Power Bank", category: "Elettronica", redeemedDate: "01/09/2024" }
     ]
 }
