@@ -1,4 +1,4 @@
-import { Award } from 'lucide-react'
+import { Award, MapPin } from 'lucide-react'
 import { useState } from 'react'
 
 const BadgeGrid = ({ badges }) => {
@@ -20,30 +20,32 @@ const BadgeGrid = ({ badges }) => {
                         <div
                             key={badge.id}
                             className={`relative flex flex-col items-center justify-center p-2 cursor-pointer transition-transform
-                              ${isHovered ? 'scale-110 z-20' : 'hover:scale-105'}`}
+                              ${isHovered ? 'scale-105' : ''}`}
                             onMouseEnter={() => setHoveredBadge(badge.id)}
                             onMouseLeave={() => setHoveredBadge(null)}
                         >
-                            {/* Badge medaglia */}
-                            <div className="relative w-20 h-20 flex items-center justify-center rounded-full bg-linear-to-tr from-yellow-400 to-yellow-200 shadow-inner border-4 border-yellow-600">
-                                {/* Cerchio interno */}
+                            {/* Badge */}
+                            <div className="relative w-20 h-20 flex items-center justify-center rounded-full bg-linear-to-tr from-yellow-400 to-orange-400 shadow-inner border-4 border-yellow-600">
                                 <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-md">
                                     <Icon className="w-8 h-8 text-yellow-600" />
                                 </div>
-
-                                {/* Effetto decorativo leggero */}
-                                <div className="absolute inset-0 rounded-full ring-2 ring-yellow-300 opacity-50 animate-pulse"></div>
+                                <div className="absolute inset-0 rounded-full ring-2 ring-yellow-300 opacity-40"></div>
                             </div>
 
-                            <span className="mt-3 text-sm font-semibold text-gray-700 text-center">
-                                {badge.name}
-                            </span>
-
-                            {isHovered && (
-                                <div className="absolute -top-14 px-3 py-1 bg-gray-800 text-white text-xs rounded shadow-lg whitespace-nowrap z-30">
+                            {/* City label sotto badge */}
+                            {badge.city && (
+                                <div className="mt-2 px-3 py-1 rounded-full
+                                        bg-linear-to-r from-yellow-400 to-orange-500 text-white text-[11px] font-semibold
+                                        flex items-center gap-1 shadow-md border border-transparent">
+                                    <MapPin className="w-3 h-3 text-white" />
                                     {badge.city}
                                 </div>
                             )}
+
+                            {/* Badge name */}
+                            <span className="mt-2 text-sm font-semibold text-gray-800 text-center leading-tight">
+                                {badge.name}
+                            </span>
                         </div>
                     )
                 })}
@@ -52,4 +54,4 @@ const BadgeGrid = ({ badges }) => {
     )
 }
 
-export default BadgeGrid;
+export default BadgeGrid
